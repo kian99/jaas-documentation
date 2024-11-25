@@ -255,7 +255,15 @@ Run the following command to unseal Vault and export the unseal token and root k
     export VAULT_TOKEN=$(echo "$key_init" | sed -n -e 's/.*Root Token: //p'); echo "Root Token = $VAULT_TOKEN"
     export UNSEAL_KEY=$(echo "$key_init" | sed -n -e 's/.*Unseal Key 1: //p'); echo "Unseal Key = $UNSEAL_KEY"
     vault operator unseal "$UNSEAL_KEY"
-    juju run vault/leader authorize-charm token="$VAULT_TOKEN"
+
+Authorises the charm to be able to interact with Vault to manage its operations.
+
+.. code:: bash
+
+    vault_secret_id=$(juju add-secret vault-token token="$VAULT_TOKEN")
+    juju grant-secret vault-token vault
+    juju run vault/leader authorize-charm secret-id="$vault_secret_id"
+    juju remove-secret "vault-token"
 
 Now run ``juju status`` again and confirm your Vault unit is in an active state.
 
