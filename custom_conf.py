@@ -77,15 +77,15 @@ html_context = {
     # Change to the discourse instance you want to be able to link to
     # using the :discourse: metadata at the top of a file
     # (use an empty value if you don't want to link)
-    'discourse': 'https://discourse.ubuntu.com',
+    'discourse': 'https://discourse.charmhub.io',
 
     # Change to the Mattermost channel you want to link to
     # (use an empty value if you don't want to link)
-    'mattermost': 'https://chat.charmhub.io/charmhub/channels/jaas',
+    'mattermost': '',
 
     # Change to the Matrix channel you want to link to
     # (use an empty value if you don't want to link)
-    'matrix': '',
+    'matrix': 'https://matrix.to/#/#jimm:ubuntu.com',
 
     # Change to the GitHub URL for your project
     'github_url': 'https://github.com/canonical/jaas-documentation',
@@ -129,7 +129,8 @@ redirects = {}
 # Links to ignore when checking links
 linkcheck_ignore = [
     'http://127.0.0.1:8000',
-    'http://test-jimm.localhost/debug/info'
+    'http://test-jimm.localhost/debug/info',
+    'https://matrix.to/#/#jimm:ubuntu.com'
     ]
 
 # Pages on which to ignore anchors
