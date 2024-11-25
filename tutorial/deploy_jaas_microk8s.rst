@@ -27,6 +27,13 @@ Start by running the following commands to install and start a Multipass VM, the
     multipass launch jammy --name jimm-deploy [-m 12g -c 4 -d 40G]
     multipass shell jimm-deploy
 
+Install some handy tools.
+
+.. code:: bash
+
+    sudo apt install jq
+    sudo snap install yq
+
 Setup Juju & MicroK8s
 ---------------------
 Now we can install our dependencies, note that Juju 3+ only works with a strictly confined MicroK8s Snap.
@@ -200,12 +207,11 @@ Initialise Vault
 ----------------
 The Vault charm has documentation on how to initialise it `here <https://charmhub.io/vault-k8s/docs/h-getting-started?channel=1.15/beta>`__. But an abridged version of the steps are provided here.
 
-Install the Vault CLI client and the ``yq`` tool.
+Install the Vault CLI client.
 
 .. code:: bash
 
     sudo snap install vault
-    sudo snap install yq
 
 To communicate with the Vault server we now need to setup 3 environment variables:
 
