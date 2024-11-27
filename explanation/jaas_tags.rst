@@ -31,7 +31,20 @@ A group tag has the following format:
     group-<group id>
 
 where ``group id`` represents the internal ID of the group. Most commonly we
-refer to groups by their group name.
+refer to groups by their name.
+
+Role
+----
+
+A role tag has the following format:
+
+.. code:: console
+
+    role-<role name>
+    role-<role id>
+
+where ``role id`` represents the internal ID of the role. Most commonly we
+refer to role by their name.
 
 Controller
 ----------
@@ -63,7 +76,7 @@ A model tag has the following format:
 where ``controller name`` specifies name of the controller on which the model
 is running and ``model name`` specifies the name of the model.
 
-Application offer
+Application Offer
 -----------------
 
 An application offer tag has the following format:
