@@ -29,6 +29,7 @@ JSON
 Juju
 Kubeflow
 Kubernetes
+localhost
 Launchpad
 LTS
 Makefile
@@ -41,6 +42,7 @@ NodePort
 observability
 OEM
 OLM
+Openstack
 Permalink
 performant
 pre
