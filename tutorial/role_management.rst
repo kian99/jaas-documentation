@@ -1,5 +1,5 @@
-Group and access management
-===========================
+Role management
+===============
 
 Introduction
 ------------
@@ -56,6 +56,12 @@ we will see the ``model-admin`` role.
 Renaming a role **does not** affect role membership or any access rights a role
 might already have in JAAS.
 
+To rename the role, run (the remainer of this doc will assume the name remains as ``model-admin``):
+
+.. code:: console
+
+    jimmctl auth role rename model-admin model-writer
+
 To remove role ``model-admin`` from JAAS, run:
 
 .. code:: console
@@ -68,8 +74,11 @@ Granting access to roles
 Now that we know how to manage roles and roles membership let's take a look
 at how we can grant roles access to resources in JIMM. 
 
-Roles do not currently identical to groups. So our ``model-admin`` role will
-only grant access to specified models.
+This section assumes the ``model-admin`` role was created and ``alice@canonical.com``
+was assigned the role.
+
+Because roles are currently identical to groups, our ``model-admin`` role needs
+to be assigned access to individual resources.
 
 Assuming a model `bob@canonical.com/foo` exists, run:
 
@@ -83,7 +92,7 @@ Now let us check if ``alice@canonical.com`` has administrator access to the mode
 
     jimmctl auth relation check user-alice@canonical.com administrator model-bob@canonical.com/foo
 
-We should get a positive result since ``adam@canonical.com`` is member of role ``model-admin``.
+We should get a positive result since ``alice@canonical.com`` is member of role ``model-admin``.
 
 To remove role ``model-admin``'s access to the model we can run:
 

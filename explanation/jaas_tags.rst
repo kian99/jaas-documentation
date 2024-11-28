@@ -30,8 +30,7 @@ A group tag has the following format:
     group-<group name>
     group-<group id>
 
-where ``group id`` represents the internal ID of the group. Most commonly we
-refer to groups by their name.
+where ``group id`` represents the unique identifier of the group.
 
 Role
 ----
@@ -43,8 +42,7 @@ A role tag has the following format:
     role-<role name>
     role-<role id>
 
-where ``role id`` represents the internal ID of the role. Most commonly we
-refer to role by their name.
+where ``role id`` represents the unique identifier of the role.
 
 Controller
 ----------
