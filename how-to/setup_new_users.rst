@@ -23,6 +23,29 @@ Login to JAAS for the first time:
 Running ``juju controllers`` will now show you the ``jaas`` controller.
 Commands like ``juju models`` will now work.
 
+Cloud Access
+------------
+
+Verify that you have access to a cloud.
+
+You can check this by running:
+
+.. code:: bash
+
+    juju clouds --controller jimm
+
+The response should resemble:
+
+.. code:: bash
+
+    Clouds available on the controller:
+    Cloud      Regions  Default    Type
+    localhost  1        localhost  lxd 
+
+If no clouds are available, an administrator may need to grant you
+``add-model`` permissions on this cloud. See the `juju grant-cloud <https://juju.is/docs/juju/juju-grant-cloud>`__ 
+command for details.
+
 Cloud Credentials
 -----------------
 
