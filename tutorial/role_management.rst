@@ -21,7 +21,7 @@ Prerequisites
 For this tutorial you will need the following:
 
 - At least one controller connected to JIMM  (see :doc:`../how-to/add_controller`)
-- ``jimmctl`` command (either built from source or installed via a snap)
+- ``jimmctl`` CLI (installed via `Snap <https://snapcraft.io/jimmctl>`__)
 
 Role management
 ----------------
@@ -56,7 +56,7 @@ we will see the ``model-admin`` role.
 Renaming a role **does not** affect role membership or any access rights a role
 might already have in JAAS.
 
-To rename the role, run (the remainer of this doc will assume the name remains as ``model-admin``):
+To rename the role, run (the remainder of this doc will assume the name remains as ``model-admin``):
 
 .. code:: console
 
