@@ -8,3 +8,4 @@ This is a collection of tutorials covering JAAS.
 
    Deploy JAAS on MicroK8s <deploy_jaas_microk8s>
    Group and access management <group_management>
+   Role management <role_management>

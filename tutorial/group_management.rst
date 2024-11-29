@@ -68,7 +68,7 @@ To list all groups known to JAAS run:
 
 .. code:: console
     
-    jimmctl group list
+    jimmctl auth group list
 
 which will show us the three groups we created.
 
