@@ -368,6 +368,7 @@ Now that you have JIMM running you can browse our additional guides to setup an 
 
 - :doc:`Setup your initial JIMM admin and configure permissions<../how-to/bootstrap_permissions>`.
 - :doc:`Learn how to add a new controller to JIMM.<../how-to/add_controller>`
+- :doc:`Learn how to setup your new user.<../how-to/setup_new_users>`
 - :doc:`Learn how to migrate models from existing controllers to JIMM <../how-to/migrate_models>`.
 - :doc:`Understand the difference between the available CLI tools <../explanation/cli_tools>`.
 
